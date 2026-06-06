@@ -1,0 +1,30 @@
+{
+  "name": "Español con Маша",
+  "short_name": "Español Маша",
+  "description": "Tu app personal de español — hecha con amor por Rufus",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#16162e",
+  "theme_color": "#16162e",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "education",
+    "lifestyle"
+  ],
+  "screenshots": []
+}
