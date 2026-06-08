@@ -5714,3 +5714,483 @@ function getFlagCount(){
 {type:"ser/estar",typeRu:"ser/estar",q:"El Obelisco ___ (ser/estar) en la Avenida 9 de Julio.",qa:"El Obelisco <b>está</b> en la Avenida 9 de Julio.",ans:"está",ansAlt:["esta"],he:"Ubicación de monumento → estar",hr:"Местонахождение памятника → estar",ge:"Ubicación de objetos y lugares → estar.",gr:"Местонахождение → estar.",isSubj:false,diff:1,tier:1,theme:"ciudad",curated:true},
 {type:"conjugación",typeRu:"conjugación",q:"Маша siempre ___ (perderse) en el centro porteño.",qa:"Маша siempre <b>se pierde</b> en el centro porteño.",ans:"se pierde",ansAlt:[],he:"Perderse: e→ie → se pierde",hr:"Perderse: e→ie → se pierde",ge:"Perderse: e→ie → se pierde.",gr:"Perderse нерег. → se pierde.",isSubj:false,diff:1,tier:1,theme:"ciudad",curated:true},
 {type:"preposición",typeRu:"preposición",q:"Dobla ___ (a la / en la) derecha al llegar al semáforo.",qa:"Dobla <b>a la</b> derecha al llegar al semáforo.",ans:"a la",ansAlt:[],he:"Doblar a la derecha / izquierda",hr:"Повернуть направо = doblar a la derecha",ge:"Doblar a la derecha/izquierda.",gr:"Повернуть → doblar a la.",isSubj:false,diff:1,tier:1,theme:"ciudad",curated:true},
+// ============================================================
+// ESPAÑOL CON МАША - BATCH 7 - 171 nuevas frases
+// Frases #3445 a #3615 (total acumulado: ~3,615)
+//
+// COMO USARLO:
+//   En index.html, busca la ULTIMA frase del array CURATED_SENTENCES
+//   (al final de Batch 6). Pega este contenido INMEDIATAMENTE DESPUES,
+//   con una coma separando:
+//
+//   ...ans:"a la",ansAlt:[],he:"...",curated:true},
+//   [PEGA AQUI - el contenido de abajo]
+//
+// FOCO GRAMATICAL: OMISIÓN DEL ARTÍCULO
+//   Sub-tipos de ejercicio (campo "type"):
+//   "artículo"    → elegir entre artículo o sin artículo
+//   Los 7 contextos cubiertos:
+//   A. Profesión tras ser (sin adjetivo)       → "soy médico"
+//   B. Sustantivos genéricos / incontables     → "tengo hambre"
+//   C. Expresiones con sin/con/de              → "sin trabajo"
+//   D. Días de semana con ser                  → "hoy es lunes"
+//   E. Nacionalidad/religión/ideología tras ser→ "es rusa"
+//   F. Título + nombre (vocativo vs referencia)→ "Doctor Rufus, venga"
+//   G. Contraste ES vs EN (artículo asimétrico)→ casos cruzados
+//
+// TEMA DISTRIBUTION:
+//   all: 60 | trabajo: 40 | relaciones: 35 | ciudad: 25 | cocina: 20 | 
+//   psicología: 20
+// ============================================================
+
+
+// ============================================================
+// A. PROFESIÓN TRAS SER — sin adjetivo (sin artículo)
+//    vs. con adjetivo/modificador (con artículo)
+// ============================================================
+
+// --- Sin artículo: profesión sola ---
+{type:"artículo",typeRu:"artículo",q:"Rufus es ___ psicólogo clínico.",qa:"Rufus es <b>∅</b> psicólogo clínico.",ans:"∅",ansAlt:["—","sin artículo"],he:"Profesión sola tras ser → sin artículo",hr:"Профессия без прилагательного → без артикля",ge:"Ser + profesión sin modificar = sin artículo. Se describe identidad categorial, no instancia.",gr:"После ser + профессия (без прилагательного) → артикль не нужен.",isSubj:false,diff:1,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша es ___ especialista en análisis transaccional.",qa:"Маша es <b>∅</b> especialista en análisis transaccional.",ans:"∅",ansAlt:["—","sin artículo"],he:"Profesión/especialidad tras ser → sin artículo",hr:"Специальность после ser → без артикля",ge:"Especialista en... = rol profesional, no sustantivo individualizado. Sin artículo.",gr:"Профессия/специальность после ser → без артикля.",isSubj:false,diff:1,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Mi madre es ___ enfermera.",qa:"Mi madre es <b>∅</b> enfermera.",ans:"∅",ansAlt:["—","sin artículo"],he:"Profesión sola → sin artículo. Contraste: 'es una enfermera excelente'",hr:"Профессия → без артикля. Ср.: una enfermera excelente",ge:"Ser + profesión = categoría, no individuo contable. Sin artículo indefinido.",gr:"Профессия после ser → без артикля.",isSubj:false,diff:1,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"El padre de Rufus era ___ abogado.",qa:"El padre de Rufus era <b>∅</b> abogado.",ans:"∅",ansAlt:["—","sin artículo"],he:"Profesión pasada (imperfecto) → sin artículo igual",hr:"Профессия в прошлом → без артикля",ge:"La regla se aplica en todos los tiempos: era + profesión = sin artículo.",gr:"Профессия в прошедшем времени → тоже без артикля.",isSubj:false,diff:1,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Cuando sea grande, quiero ser ___ escritora.",qa:"Cuando sea grande, quiero ser <b>∅</b> escritora.",ans:"∅",ansAlt:["—","sin artículo"],he:"Querer ser + profesión → sin artículo",hr:"Хотеть стать кем-то → без артикля",ge:"Querer ser / hacerse / convertirse en + profesión = sin artículo.",gr:"Хотеть стать + профессия → без артикля.",isSubj:false,diff:1,tier:1,theme:"trabajo",curated:true},
+
+// --- Con artículo: profesión modificada por adjetivo ---
+{type:"artículo",typeRu:"artículo",q:"Rufus es ___ psicólogo muy comprometido con sus pacientes.",qa:"Rufus es <b>un</b> psicólogo muy comprometido con sus pacientes.",ans:"un",ansAlt:[],he:"Profesión + adjetivo → necesita artículo indefinido",hr:"Профессия + прилагательное → нужен артикль",ge:"Cuando la profesión lleva adjetivo o cláusula, se vuelve un sustantivo contable → un/una.",gr:"Профессия с прилагательным → нужен неопределённый артикль.",isSubj:false,diff:2,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша es ___ terapeuta muy intuitiva.",qa:"Маша es <b>una</b> terapeuta muy intuitiva.",ans:"una",ansAlt:[],he:"Profesión + adjetivo evaluativo → artículo indefinido",hr:"Профессия + оценочное прилагательное → артикль",ge:"Profesión + adjetivo = instancia particular del tipo → una.",gr:"Профессия + прилагательное → неопределённый артикль una.",isSubj:false,diff:2,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Esa mujer es ___ arquitecta brillante.",qa:"Esa mujer es <b>una</b> arquitecta brillante.",ans:"una",ansAlt:[],he:"Sustantivo predicativo + adjetivo → artículo indefinido",hr:"Предикативное существительное + прилагательное → артикль",ge:"Es una + sustantivo + adjetivo = individuo dentro de una clase.",gr:"Существительное с прилагательным → una.",isSubj:false,diff:2,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Su hermano es ___ cocinero que trabaja en La Cabrera.",qa:"Su hermano es <b>un</b> cocinero que trabaja en La Cabrera.",ans:"un",ansAlt:[],he:"Profesión + cláusula relativa → artículo indefinido",hr:"Профессия + придаточное → артикль",ge:"La cláusula relativa individualiza → se necesita artículo.",gr:"Профессия + придаточное → нужен артикль un.",isSubj:false,diff:2,tier:1,theme:"cocina",curated:true},
+
+// --- Contraste directo: par mínimo ---
+{type:"artículo",typeRu:"artículo",q:"Elegí la forma correcta: Rufus es [médico / un médico].",qa:"Rufus es <b>médico</b>.",ans:"médico",ansAlt:[],he:"Profesión sola → sin artículo. 'Un médico' sería correcto solo con adjetivo.",hr:"Только профессия → без артикля",ge:"'Es médico' = categoría profesional. 'Es un médico' requiere modificador para ser natural.",gr:"Профессия без модификатора → без артикля.",isSubj:false,diff:2,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Elegí la forma correcta: Маша es [terapeuta / una terapeuta excelente].",qa:"Маша es <b>una terapeuta excelente</b>.",ans:"una terapeuta excelente",ansAlt:[],he:"Con adjetivo 'excelente' → necesita artículo",hr:"С прилагательным → нужен артикль",ge:"El adjetivo 'excelente' convierte la profesión en una instancia contable.",gr:"С прилагательным → una terapeuta excelente.",isSubj:false,diff:2,tier:1,theme:"trabajo",curated:true},
+
+
+// ============================================================
+// B. SUSTANTIVOS GENÉRICOS / INCONTABLES — sin artículo
+// ============================================================
+
+{type:"artículo",typeRu:"artículo",q:"Rufus tiene ___ hambre después de las sesiones largas.",qa:"Rufus tiene <b>∅</b> hambre después de las sesiones largas.",ans:"∅",ansAlt:["—","sin artículo"],he:"Tener hambre / sed / frío / sueño → sin artículo (expresiones con tener)",hr:"Tener hambre / sed / frío / sueño → без артикля",ge:"Expresiones con tener: hambre, sed, frío, calor, sueño, miedo, razón, suerte = sin artículo.",gr:"Выражения с tener (голод, жажда...) → без артикля.",isSubj:false,diff:1,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша necesita ___ información sobre el sistema de salud argentino.",qa:"Маша necesita <b>∅</b> información sobre el sistema de salud argentino.",ans:"∅",ansAlt:["—","sin artículo"],he:"Incontable genérico en objeto directo → sin artículo",hr:"Неисчисляемое существительное → без артикля",ge:"Información, tiempo, dinero, agua, paciencia como objeto directo genérico = sin artículo.",gr:"Неисчисляемое в позиции объекта → без артикля.",isSubj:false,diff:1,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Para la terapia se necesita ___ paciencia.",qa:"Para la terapia se necesita <b>∅</b> paciencia.",ans:"∅",ansAlt:["—","sin artículo"],he:"Sustantivo abstracto/incontable en función genérica → sin artículo",hr:"Абстрактное существительное в общем смысле → без артикля",ge:"Paciencia, amor, confianza, empatía en sentido genérico = sin artículo.",gr:"Абстрактное / неисчисляемое в общем смысле → без артикля.",isSubj:false,diff:1,tier:1,theme:"psicología",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"¿Tomás ___ café o ___ té?",qa:"¿Tomás <b>∅</b> café o <b>∅</b> té?",ans:"∅",ansAlt:["—","sin artículo"],he:"Sustancias/bebidas en sentido genérico → sin artículo",hr:"Напитки/вещества в общем смысле → без артикля",ge:"Café, té, agua, leche = sustancias incontables. En sentido genérico = sin artículo.",gr:"Напитки как вещество → без артикля.",isSubj:false,diff:1,tier:1,theme:"cocina",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Este libro tiene ___ mucho valor para Маша.",qa:"Este libro tiene <b>∅</b> mucho valor para Маша.",ans:"∅",ansAlt:["—","sin artículo"],he:"Valor = sustantivo abstracto + mucho → sin artículo",hr:"Абстрактное существительное с mucho → без артикля",ge:"Mucho/poco + sustantivo abstracto incontable = sin artículo.",gr:"Mucho/poco + абстрактное → без артикля.",isSubj:false,diff:1,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus tiene ___ experiencia con pacientes con trauma complejo.",qa:"Rufus tiene <b>∅</b> experiencia con pacientes con trauma complejo.",ans:"∅",ansAlt:["—","sin artículo"],he:"Experiencia genérica (incontable) → sin artículo",hr:"Опыт в общем смысле → без артикля",ge:"Experiencia = masa incontable en sentido genérico. Con adjetivo: 'una experiencia increíble'.",gr:"Опыт (неисчисляемое) → без артикля. С прилагательным: una experiencia.",isSubj:false,diff:1,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Hoy hace ___ calor insoportable en Buenos Aires.",qa:"Hoy hace <b>∅</b> calor insoportable en Buenos Aires.",ans:"∅",ansAlt:["—","sin artículo"],he:"Hacer calor/frío/sol/viento → sin artículo siempre",hr:"Hacer calor/frío → без артикля всегда",ge:"Hacer + fenómeno meteorológico = sin artículo en todas las estructuras.",gr:"Hacer calor/frío/sol → без артикля.",isSubj:false,diff:1,tier:1,theme:"ciudad",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"En Buenos Aires hay ___ mucha humedad en verano.",qa:"En Buenos Aires hay <b>∅</b> mucha humedad en verano.",ans:"∅",ansAlt:["—","sin artículo"],he:"Sustantivo incontable con mucha → sin artículo",hr:"Неисчисляемое с mucha → без артикля",ge:"Humedad, temperatura, lluvia = incontables. Hay + mucha/poca + incontable = sin artículo.",gr:"Много + неисчисляемое → без артикля.",isSubj:false,diff:1,tier:1,theme:"ciudad",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша busca ___ trabajo en su campo.",qa:"Маша busca <b>∅</b> trabajo en su campo.",ans:"∅",ansAlt:["—","sin artículo"],he:"Buscar trabajo (genérico) → sin artículo. Contraste: busca un trabajo específico",hr:"Искать работу (в общем) → без артикля",ge:"Buscar trabajo, buscar casa, buscar pareja = idea genérica, no instancia → sin artículo.",gr:"Искать работу/дом/партнёра → без артикля.",isSubj:false,diff:2,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"¿Tenés ___ tiempo esta tarde?",qa:"¿Tenés <b>∅</b> tiempo esta tarde?",ans:"∅",ansAlt:["—","sin artículo"],he:"Tiempo (incontable) en pregunta → sin artículo",hr:"Время (неисчисляемое) в вопросе → без артикля",ge:"Tiempo = incontable abstracto. Tener tiempo / falta tiempo = sin artículo.",gr:"Время → без артикля.",isSubj:false,diff:1,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Hace falta ___ dinero para pagar el alquiler.",qa:"Hace falta <b>∅</b> dinero para pagar el alquiler.",ans:"∅",ansAlt:["—","sin artículo"],he:"Dinero (incontable) → sin artículo",hr:"Деньги (неисчисляемое) → без артикля",ge:"Dinero, plata = incontable. Hace falta / necesitar dinero = sin artículo.",gr:"Деньги → без артикля.",isSubj:false,diff:1,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus tuvo ___ suerte en ese caso.",qa:"Rufus tuvo <b>∅</b> suerte en ese caso.",ans:"∅",ansAlt:["—","sin artículo"],he:"Tener suerte → expresión fija, sin artículo",hr:"Везти/иметь удачу → без артикля",ge:"Tener suerte / mala suerte = locución hecha. Sin artículo.",gr:"Везти → tener suerte → без артикля.",isSubj:false,diff:1,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша tiene ___ miedo de las tormentas.",qa:"Маша tiene <b>∅</b> miedo de las tormentas.",ans:"∅",ansAlt:["—","sin artículo"],he:"Tener miedo → expresión fija sin artículo",hr:"Бояться → tener miedo → без артикля",ge:"Tener miedo / terror / pánico (sin adjetivo) = sin artículo.",gr:"Tener miedo → без артикля.",isSubj:false,diff:1,tier:1,theme:"all",curated:true},
+
+
+// ============================================================
+// C. EXPRESIONES CON SIN / CON / DE
+// ============================================================
+
+{type:"artículo",typeRu:"artículo",q:"Rufus llegó a la sesión sin ___ corbata.",qa:"Rufus llegó a la sesión sin <b>∅</b> corbata.",ans:"∅",ansAlt:["—","sin artículo"],he:"Sin + sustantivo → sin artículo en expresión de privación",hr:"Sin + существительное → без артикля",ge:"Sin + sustantivo = privación genérica. Sin corbata, sin trabajo, sin miedo = sin artículo.",gr:"Sin + существительное → без артикля.",isSubj:false,diff:1,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша manejó la situación con ___ mucha calma.",qa:"Маша manejó la situación con <b>∅</b> mucha calma.",ans:"∅",ansAlt:["—","sin artículo"],he:"Con + incontable abstracto → sin artículo",hr:"Con + абстрактное неисчисляемое → без артикля",ge:"Con calma, con paciencia, con amor = modo/actitud. Sin artículo.",gr:"Con + абстрактное → без артикля.",isSubj:false,diff:1,tier:1,theme:"psicología",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Tenés que hacerlo con ___ cuidado.",qa:"Tenés que hacerlo con <b>∅</b> cuidado.",ans:"∅",ansAlt:["—","sin artículo"],he:"Con cuidado = expresión adverbial fija → sin artículo",hr:"Con cuidado = наречное выражение → без артикля",ge:"Con cuidado / con calma / con prisa = locuciones adverbiales. Sin artículo.",gr:"Con cuidado — наречная конструкция → без артикля.",isSubj:false,diff:1,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Está sin ___ trabajo desde hace tres meses.",qa:"Está sin <b>∅</b> trabajo desde hace tres meses.",ans:"∅",ansAlt:["—","sin artículo"],he:"Sin trabajo = situación de desempleo → sin artículo",hr:"Без работы → sin trabajo → без артикля",ge:"Sin trabajo / sin dinero / sin casa = condición de privación. Sin artículo.",gr:"Без работы → sin trabajo → без артикля.",isSubj:false,diff:1,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Fue una conversación sin ___ sentido.",qa:"Fue una conversación sin <b>∅</b> sentido.",ans:"∅",ansAlt:["—","sin artículo"],he:"Sin sentido = locución adjetival → sin artículo",hr:"Бессмысленный = sin sentido → без артикля",ge:"Sin sentido, sin valor, sin importancia = locuciones calificativas. Sin artículo.",gr:"Sin sentido — устойчивое выражение → без артикля.",isSubj:false,diff:1,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Una taza de ___ café, por favor.",qa:"Una taza de <b>∅</b> café, por favor.",ans:"∅",ansAlt:["—","sin artículo"],he:"De + sustantivo incontable (contenido) → sin artículo",hr:"De + неисчисляемое (содержимое) → без артикля",ge:"Una taza/vaso/litro de café/agua/leche: el de indica contenido. Sin artículo.",gr:"Стакан/чашка de + вещество → без артикля.",isSubj:false,diff:1,tier:1,theme:"cocina",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша pidió un vaso de ___ agua con gas.",qa:"Маша pidió un vaso de <b>∅</b> agua con gas.",ans:"∅",ansAlt:["—","sin artículo"],he:"Vaso de agua = medida + sustancia → sin artículo",hr:"Стакан воды → без артикля",ge:"Medida + de + sustancia líquida/sólida = sin artículo.",gr:"Стакán воды → без артикля.",isSubj:false,diff:1,tier:1,theme:"cocina",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus trabaja con ___ casos muy complejos.",qa:"Rufus trabaja con <b>∅</b> casos muy complejos.",ans:"∅",ansAlt:["—","sin artículo"],he:"Con + plural sin determinante → sin artículo (referencia genérica)",hr:"Con + существительное мн.ч. (общий смысл) → без артикля",ge:"Trabajar con casos, con pacientes, con datos = referencia genérica de clase. Sin artículo.",gr:"С чем-то в общем смысле → без артикля.",isSubj:false,diff:2,tier:2,theme:"psicología",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Es una persona sin ___ prejuicios.",qa:"Es una persona sin <b>∅</b> prejuicios.",ans:"∅",ansAlt:["—","sin artículo"],he:"Sin + plural → sin artículo",hr:"Без предрассудков → sin prejuicios → без артикля",ge:"Sin + plural o incontable = sin artículo. Sin prejuicios, sin dudas, sin errores.",gr:"Sin + мн.ч. → без артикля.",isSubj:false,diff:1,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Hablaron de ___ política toda la noche.",qa:"Hablaron de <b>∅</b> política toda la noche.",ans:"∅",ansAlt:["—","sin artículo"],he:"Hablar de + campo abstracto → sin artículo",hr:"Говорить о + области → без артикля",ge:"Hablar de política, de arte, de trabajo, de amor = ámbito genérico. Sin artículo.",gr:"Говорить о чём-то в общем → без артикля.",isSubj:false,diff:1,tier:1,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша trabaja con ___ niños también.",qa:"Маша trabaja con <b>∅</b> niños también.",ans:"∅",ansAlt:["—","sin artículo"],he:"Con + plural genérico → sin artículo",hr:"С детьми (в общем) → без артикля",ge:"Trabajar con niños / con adultos = categoría de persona. Sin artículo.",gr:"С + категория людей → без артикля.",isSubj:false,diff:1,tier:1,theme:"trabajo",curated:true},
+
+
+// ============================================================
+// D. DÍAS DE LA SEMANA CON SER
+// ============================================================
+
+{type:"artículo",typeRu:"artículo",q:"Hoy es ___ lunes.",qa:"Hoy es <b>∅</b> lunes.",ans:"∅",ansAlt:["—","sin artículo"],he:"Ser + día de la semana → sin artículo",hr:"Сегодня + день недели → без артикля",ge:"Hoy es lunes/martes/etc. = identificación del día. Sin artículo.",gr:"Сегодня понедельник → hoy es lunes → без артикля.",isSubj:false,diff:1,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Mañana es ___ martes y Rufus tiene pacientes.",qa:"Mañana es <b>∅</b> martes y Rufus tiene pacientes.",ans:"∅",ansAlt:["—","sin artículo"],he:"Ser + día → sin artículo",hr:"Завтра вторник → без артикля",ge:"Identificación del día: es + nombre del día = sin artículo.",gr:"Завтра вторник → без артикля.",isSubj:false,diff:1,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"La próxima sesión es ___ jueves.",qa:"La próxima sesión es <b>∅</b> jueves.",ans:"∅",ansAlt:["—","sin artículo"],he:"Ser + día → sin artículo (predicativo de fecha)",hr:"Сессия в четверг → без артикля",ge:"Es + día de la semana como predicado = sin artículo.",gr:"Сессия в четверг → sin artículo.",isSubj:false,diff:1,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"La clase de Маша es ___ viernes a las seis.",qa:"La clase de Маша es <b>∅</b> viernes a las seis.",ans:"∅",ansAlt:["—","sin artículo"],he:"Es + día → sin artículo",hr:"Занятие в пятницу → без артикля",ge:"El día como predicado de ser: sin artículo.",gr:"Занятие в пятницу → без артикля.",isSubj:false,diff:1,tier:1,theme:"all",curated:true},
+
+// Contraste: artículo definido con el/los para hábito
+{type:"artículo",typeRu:"artículo",q:"Elegí: Rufus descansa [sábado / el sábado / los sábados].",qa:"Rufus descansa <b>los sábados</b>.",ans:"los sábados",ansAlt:[],he:"Hábito semanal → el/los + día. 'Sábado' solo sería incompleto.",hr:"Привычка → los + день недели (los sábados = по субботам)",ge:"El sábado = este sábado específico. Los sábados = todos los sábados (hábito). Sin artículo solo con ser.",gr:"Привычка: los sábados = по субботам. Факт: es sábado → без артикля.",isSubj:false,diff:2,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша va a su clase de AT ___ miércoles.",qa:"Маша va a su clase de AT <b>los miércoles</b>.",ans:"los miércoles",ansAlt:["el miércoles"],he:"Hábito recurrente → los + día",hr:"Регулярное действие → los + день",ge:"Los miércoles = hábito (todos los miércoles). El miércoles = este miércoles específico.",gr:"Регулярно: los miércoles. В этот раз: el miércoles.",isSubj:false,diff:2,tier:1,theme:"all",curated:true},
+
+
+// ============================================================
+// E. NACIONALIDAD / RELIGIÓN / IDEOLOGÍA TRAS SER
+// ============================================================
+
+{type:"artículo",typeRu:"artículo",q:"Маша es ___ rusa.",qa:"Маша es <b>∅</b> rusa.",ans:"∅",ansAlt:["—","sin artículo"],he:"Nacionalidad tras ser → sin artículo (funciona como adjetivo)",hr:"Национальность после ser → без артикля",ge:"Ser + nacionalidad = función adjetival, no sustantivo individual. Sin artículo.",gr:"Национальность после ser → без артикля.",isSubj:false,diff:1,tier:1,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus es ___ argentino.",qa:"Rufus es <b>∅</b> argentino.",ans:"∅",ansAlt:["—","sin artículo"],he:"Nacionalidad → sin artículo",hr:"Национальность → без артикля",ge:"Ser argentino/a, ser ruso/a = adjetivo de clase. Sin artículo.",gr:"Аргентинец → argentino → без артикля.",isSubj:false,diff:1,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Alberto es ___ italiano de segunda generación.",qa:"Alberto es <b>∅</b> italiano de segunda generación.",ans:"∅",ansAlt:["—","sin artículo"],he:"Nacionalidad + complemento → sin artículo igual",hr:"Национальность + дополнение → без артикля",ge:"La regla se mantiene aunque haya un complemento como 'de segunda generación'.",gr:"Национальность + дополнение → без артикля.",isSubj:false,diff:2,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша es ___ ortodoxa.",qa:"Маша es <b>∅</b> ortodoxa.",ans:"∅",ansAlt:["—","sin artículo"],he:"Religión/confesión tras ser → sin artículo",hr:"Религия после ser → без артикля",ge:"Ser ortodoxa/católico/judío/protestante = clase religiosa/ideológica. Sin artículo.",gr:"Религия/конфессия после ser → без артикля.",isSubj:false,diff:1,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Mi vecino es ___ budista.",qa:"Mi vecino es <b>∅</b> budista.",ans:"∅",ansAlt:["—","sin artículo"],he:"Religión → sin artículo",hr:"Религия → без артикля",ge:"Ser budista/agnóstico/ateo = categoría. Sin artículo.",gr:"Религия → без артикля.",isSubj:false,diff:1,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"El padre de Rufus era ___ socialdemócrata.",qa:"El padre de Rufus era <b>∅</b> socialdemócrata.",ans:"∅",ansAlt:["—","sin artículo"],he:"Ideología política tras ser → sin artículo",hr:"Политические взгляды после ser → без артикля",ge:"Ser comunista / liberal / peronista / socialdemócrata = ideología. Sin artículo.",gr:"Политические взгляды → без артикля.",isSubj:false,diff:2,tier:2,theme:"all",curated:true},
+
+// Contraste: con artículo cuando es sustantivo individualizado
+{type:"artículo",typeRu:"artículo",q:"Elegí: Маша es [rusa / una rusa encantadora].",qa:"Маша es <b>una rusa encantadora</b>.",ans:"una rusa encantadora",ansAlt:[],he:"Nacionalidad + adjetivo → se individaliza → artículo",hr:"Национальность + прилагательное → нужен артикль",ge:"Con adjetivo evaluativo, la nacionalidad se vuelve sustantivo contable.",gr:"Национальность + прилагательное → una.",isSubj:false,diff:2,tier:2,theme:"relaciones",curated:true},
+
+
+// ============================================================
+// F. TÍTULOS + NOMBRES: vocativo vs. referencia
+// ============================================================
+
+{type:"artículo",typeRu:"artículo",q:"___ Doctor Rufus, su próximo paciente llegó.",qa:"<b>∅</b> Doctor Rufus, su próximo paciente llegó.",ans:"∅",ansAlt:["—","sin artículo"],he:"Título en vocativo (llamar a alguien) → sin artículo",hr:"Обращение (вокатив) → без артикля",ge:"Cuando se usa el título para llamar a alguien directamente = vocativo. Sin artículo.",gr:"Обращение по титулу → без артикля.",isSubj:false,diff:2,tier:2,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Acabo de hablar con ___ doctor Rufus.",qa:"Acabo de hablar con <b>el</b> doctor Rufus.",ans:"el",ansAlt:[],he:"Referencia de tercera persona → el/la + título + nombre",hr:"Упоминание в 3-м лице → artículo + titolo + nombre",ge:"Cuando se menciona a alguien (no se le habla) → el doctor / la doctora + nombre.",gr:"Упоминание → el/la + titulo + nombre.",isSubj:false,diff:2,tier:2,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"___ Doctora Minina, la esperan en recepción.",qa:"<b>∅</b> Doctora Minina, la esperan en recepción.",ans:"∅",ansAlt:["—","sin artículo"],he:"Vocativo: llamar a alguien por su título → sin artículo",hr:"Обращение → без артикля",ge:"Vocativo con título = sin artículo. Doctora Minina, venga.",gr:"Обращение по должности → без артикля.",isSubj:false,diff:2,tier:2,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Según ___ doctor Rufus, el tratamiento va bien.",qa:"Según <b>el</b> doctor Rufus, el tratamiento va bien.",ans:"el",ansAlt:[],he:"Referencia indirecta → el + título + nombre",hr:"Упоминание → el + титул + имя",ge:"Según / para / con + doctor/profesora/señor + nombre = siempre artículo.",gr:"Упоминание → el + титул + имя.",isSubj:false,diff:2,tier:2,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"___ Señor García, por favor firme aquí.",qa:"<b>∅</b> Señor García, por favor firme aquí.",ans:"∅",ansAlt:["—","sin artículo"],he:"Señor/Señora en vocativo → sin artículo",hr:"Обращение Señor/Señora → без артикля",ge:"Señor García / Señora Minina en vocativo = sin artículo.",gr:"Обращение Señor/Señora → без артикля.",isSubj:false,diff:2,tier:2,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"___ señor García llegó tarde a la cita.",qa:"<b>El</b> señor García llegó tarde a la cita.",ans:"El",ansAlt:[],he:"Referencia de tercera persona → el señor / la señora + apellido",hr:"Упоминание в 3-м лице → el/la + señor/a",ge:"El señor García (referencia) vs. Señor García (vocativo).",gr:"Упоминание → el señor García.",isSubj:false,diff:2,tier:2,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"___ Presidente Milei anunció nuevas medidas.",qa:"<b>El</b> Presidente Milei anunció nuevas medidas.",ans:"El",ansAlt:[],he:"Referencia a figura pública → artículo siempre",hr:"Упоминание публичной фигуры → артикль",ge:"En referencia (no vocativo): el Presidente, el Papa, el Director.",gr:"Упоминание → el Presidente.",isSubj:false,diff:2,tier:2,theme:"ciudad",curated:true},
+
+// Uso con lenguas
+{type:"artículo",typeRu:"artículo",q:"Маша habla ___ ruso y está aprendiendo ___ español.",qa:"Маша habla <b>∅</b> ruso y está aprendiendo <b>∅</b> español.",ans:"∅",ansAlt:["—","sin artículo"],he:"Hablar + idioma → sin artículo",hr:"Говорить + язык → без артикля",ge:"Hablar español/ruso/inglés (objeto directo) = sin artículo. El español/el ruso como sujeto = con artículo.",gr:"Говорить + язык → без артикля.",isSubj:false,diff:1,tier:1,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"___ ruso es un idioma muy difícil para Rufus.",qa:"<b>El</b> ruso es un idioma muy difícil para Rufus.",ans:"El",ansAlt:[],he:"Idioma como sujeto → artículo definido",hr:"Язык как подлежащее → артикль",ge:"El español / el ruso / el inglés como sujeto de la oración = artículo definido.",gr:"Язык как подлежащее → el + idioma.",isSubj:false,diff:2,tier:1,theme:"relaciones",curated:true},
+
+
+// ============================================================
+// G. CONTRASTE ESPAÑOL ↔ INGLÉS: asimetrías de artículo
+// ============================================================
+
+// --- Español tiene artículo, inglés no ---
+{type:"artículo",typeRu:"artículo",q:"A Rufus le duele ___ cabeza.",qa:"A Rufus le duele <b>la</b> cabeza.",ans:"la",ansAlt:[],he:"Partes del cuerpo con doler/tener → artículo definido (no posesivo)",hr:"Части тела с doler → определённый артикль (не притяжательное)",ge:"Con doler, mover, torcer partes del cuerpo = artículo definido, NO posesivo (su cabeza → la cabeza).",gr:"Части тела с doler → la/el, не su.",isSubj:false,diff:2,tier:2,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша se lavó ___ manos antes de comer.",qa:"Маша se lavó <b>las</b> manos antes de comer.",ans:"las",ansAlt:[],he:"Partes del cuerpo con verbo reflexivo → artículo definido",hr:"Части тела с рефлексивным глаголом → определённый артикль",ge:"Lavarse las manos / peinarse el pelo / romperse el brazo = artículo definido.",gr:"Reflexivo + parte del cuerpo → artículo definido.",isSubj:false,diff:2,tier:2,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus se puso ___ saco antes de salir.",qa:"Rufus se puso <b>el</b> saco antes de salir.",ans:"el",ansAlt:[],he:"Ponerse/sacarse la ropa → artículo definido (no posesivo)",hr:"Надевать/снимать одежду → определённый артикль",ge:"Ponerse el saco / sacarse los zapatos = artículo definido. En inglés: 'his jacket' → en español: 'el saco'.",gr:"Одевать/снимать одежду → el/la (не su).",isSubj:false,diff:2,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"___ vida en Buenos Aires es intensa.",qa:"<b>La</b> vida en Buenos Aires es intensa.",ans:"La",ansAlt:[],he:"Concepto abstracto generalizado como sujeto → artículo definido",hr:"Абстрактное понятие как подлежащее → определённый артикль",ge:"La vida, el amor, la muerte, la felicidad como sujeto = artículo definido. Inglés: 'Life is...' sin artículo.",gr:"Абстрактное как подлежащее → la/el (en inglés sin artículo).",isSubj:false,diff:2,tier:2,theme:"ciudad",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"___ amor no se puede comprar.",qa:"<b>El</b> amor no se puede comprar.",ans:"El",ansAlt:[],he:"Abstracto generalizado como sujeto → artículo definido. Inglés: 'Love cannot...'",hr:"Абстрактное как подлежащее → el (en inglés sin artículo)",ge:"El amor / la libertad / la justicia como sujeto de enunciado general = artículo definido.",gr:"Абстрактное понятие в общем смысле как подлежащее → el.",isSubj:false,diff:2,tier:2,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"___ psicología es una ciencia compleja.",qa:"<b>La</b> psicología es una ciencia compleja.",ans:"La",ansAlt:[],he:"Nombre de disciplina como sujeto → artículo definido",hr:"Название дисциплины как подлежащее → артикль",ge:"La psicología / la medicina / la física = disciplinas como sujeto = artículo. Inglés: 'Psychology is...'",gr:"Название дисциплины как подлежащее → la.",isSubj:false,diff:2,tier:2,theme:"psicología",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"A Маша le gusta ___ música clásica.",qa:"A Маша le gusta <b>la</b> música clásica.",ans:"la",ansAlt:[],he:"Gustar + concepto general → artículo definido",hr:"Нравиться + общее понятие → определённый артикль",ge:"Gustar / encantar / odiar + sustantivo genérico = artículo definido. Inglés: 'She likes classical music' sin artículo.",gr:"Gustar + общее понятие → la/el.",isSubj:false,diff:2,tier:2,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus sabe que ___ terapia requiere tiempo.",qa:"Rufus sabe que <b>la</b> terapia requiere tiempo.",ans:"la",ansAlt:[],he:"Terapia como concepto general → artículo definido",hr:"Терапия как общее понятие → определённый артикль",ge:"La terapia / la terapia de grupo = idea genérica de la disciplina = artículo.",gr:"Концепция в общем смысле → la.",isSubj:false,diff:2,tier:2,theme:"psicología",curated:true},
+
+// --- Inglés tiene artículo, español no (o al revés) ---
+{type:"artículo",typeRu:"artículo",q:"Rufus fue a ___ trabajo a las ocho.",qa:"Rufus fue a <b>∅</b> trabajo a las ocho.",ans:"∅",ansAlt:["—","sin artículo"],he:"Ir a + lugar de actividad habitual → sin artículo (igual que 'ir a casa')",hr:"Идти на работу → sin artículo (= идти домой)",ge:"Ir a trabajo / ir a casa / ir a misa = destino habitual = sin artículo. Inglés: 'go to work' (mismo patrón).",gr:"Идти на работу → без артикля (аналог go to work).",isSubj:false,diff:2,tier:2,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша fue a ___ casa de su madre.",qa:"Маша fue a <b>la</b> casa de su madre.",ans:"la",ansAlt:[],he:"Ir a la casa de alguien (específica) → artículo",hr:"К чьему-то дому (конкретному) → артикль",ge:"Ir a casa (sin artículo) = ir al propio hogar. Ir a la casa de alguien = destino específico → artículo.",gr:"В конкретный дом → artículo. В свой дом → sin artículo.",isSubj:false,diff:3,tier:2,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus va a ___ misa los domingos. (¿artículo o no?)",qa:"Rufus va a <b>∅</b> misa los domingos.",ans:"∅",ansAlt:["—","sin artículo"],he:"Ir a misa / ir a clase / ir a juicio → sin artículo (actividad institucional)",hr:"Идти на мессу / в класс / в суд → без артикля",ge:"Ir a misa / a clase / a juicio / a sesión = actividades institucionales habituales = sin artículo.",gr:"Идти на мессу/урок/суд → без артикля.",isSubj:false,diff:2,tier:2,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Están en ___ reunión ahora.",qa:"Están en <b>∅</b> reunión ahora.",ans:"∅",ansAlt:["—","sin artículo"],he:"En reunión / en clase / en sesión = actividad en curso → sin artículo",hr:"На встрече/на уроке → без артикля",ge:"Estar en reunión / en clase / en sesión / en consulta = actividad sin artículo.",gr:"На встрече/занятии/сессии → без артикля.",isSubj:false,diff:2,tier:2,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Пeред por y para: Estudia ___ medicina.",qa:"Estudia <b>∅</b> medicina.",ans:"∅",ansAlt:["—","sin artículo"],he:"Estudiar + nombre de carrera/disciplina → sin artículo",hr:"Изучать + название дисциплины → без артикля",ge:"Estudiar medicina/derecho/psicología/ruso = sin artículo. Inglés: 'study medicine' (mismo patrón).",gr:"Учиться на + дисциплина → без артикля.",isSubj:false,diff:1,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша estudia ___ español con mucho entusiasmo.",qa:"Маша estudia <b>∅</b> español con mucho entusiasmo.",ans:"∅",ansAlt:["—","sin artículo"],he:"Estudiar + idioma → sin artículo",hr:"Изучать язык → без артикля",ge:"Estudiar español/ruso/inglés = sin artículo. Pero: el español que aprendió es perfecto (sujeto → artículo).",gr:"Изучать язык → без артикля.",isSubj:false,diff:1,tier:1,theme:"relaciones",curated:true},
+
+
+// ============================================================
+// CONSOLIDACIÓN — Ejercicios de elección múltiple y contraste
+// ============================================================
+
+{type:"artículo",typeRu:"artículo",q:"Elegí: 'Es ___ buen amigo.' [un / ∅]",qa:"Es <b>un</b> buen amigo.",ans:"un",ansAlt:[],he:"Buen amigo: adjetivo antes del sustantivo → artículo indefinido",hr:"С прилагательным 'buen' → артикль un",ge:"'Es un buen amigo' = con adjetivo = artículo indefinido. Sin adjetivo: 'Es amigo de Rufus' no requeriría artículo.",gr:"С прилагательным → un.",isSubj:false,diff:2,tier:1,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Elegí: 'Rufus es ___ médico.' [médico / un médico / el médico]",qa:"Rufus es <b>médico</b>.",ans:"médico",ansAlt:[],he:"Profesión sola → sin artículo",hr:"Профессия без изменений → без артикля",ge:"'Es médico' = categoría. 'Es el médico' = el conocido. 'Es un médico brillante' = con modificador.",gr:"Только профессия → без артикля.",isSubj:false,diff:2,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"¿Es correcto: 'Маша es una rusa'?",qa:"<b>Solo si hay un modificador</b> (ej.: 'una rusa encantadora'). Sin adjetivo, lo correcto es: 'Маша es rusa'.",ans:"Solo si hay un modificador",ansAlt:["Depende del contexto"],he:"Nacionalidad sin adjetivo → sin artículo. Con adjetivo → artículo",hr:"Национальность без прилагательного → без артикля. С прилагательным → артикль",ge:"'Es rusa' = categoría. 'Es una rusa encantadora' = instancia con evaluación.",gr:"Национальность → без артикля. С прилагательным → una.",isSubj:false,diff:3,tier:2,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"¿Con o sin artículo? 'Tiene ___ fiebre alta.'",qa:"Tiene <b>∅</b> fiebre alta.",ans:"∅",ansAlt:["—","sin artículo"],he:"Tener fiebre / tos / gripe → sin artículo (síntomas físicos)",hr:"Tener fiebre/tos/gripe → без артикля",ge:"Tener fiebre/tos/gripe/dolor = síntomas con tener = sin artículo.",gr:"Симптомы с tener → без артикля.",isSubj:false,diff:1,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"¿Con o sin artículo? 'Tengo ___ dolor de cabeza.'",qa:"Tengo <b>∅</b> dolor de cabeza.",ans:"∅",ansAlt:["—","sin artículo"],he:"Tener dolor de + parte → sin artículo",hr:"Tener dolor de + часть тела → без артикля",ge:"Dolor de cabeza / de espalda / de estómago con tener = sin artículo.",gr:"Tener dolor de → без артикля.",isSubj:false,diff:1,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"___ trabajo de Rufus es muy exigente.",qa:"<b>El</b> trabajo de Rufus es muy exigente.",ans:"El",ansAlt:[],he:"Trabajo específico (el de Rufus) → artículo definido",hr:"Конкретная работа Руфуса → определённый артикль",ge:"El trabajo de Rufus = trabajo específico, conocido. No el genérico 'busco trabajo'.",gr:"Конкретная работа → el trabajo.",isSubj:false,diff:2,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus necesita ___ descanso. (¿artículo?)",qa:"Rufus necesita <b>∅</b> descanso.",ans:"∅",ansAlt:["—","sin artículo"],he:"Necesitar descanso / ayuda / apoyo → incontable abstracto → sin artículo",hr:"Нуждаться в отдыхе → без артикля",ge:"Necesitar descanso/ayuda/apoyo = incontable abstracto en función genérica = sin artículo.",gr:"Нуждаться в отдыхе/помощи → без артикля.",isSubj:false,diff:2,tier:1,theme:"psicología",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша hace ___ yoga todas las mañanas.",qa:"Маша hace <b>∅</b> yoga todas las mañanas.",ans:"∅",ansAlt:["—","sin artículo"],he:"Hacer yoga / pilates / deporte → sin artículo",hr:"Заниматься йогой → без артикля",ge:"Hacer yoga / deporte / ejercicio / dieta = actividades habituales = sin artículo.",gr:"Hacer yoga/deporte → без артикля.",isSubj:false,diff:1,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"¿Quién habla más ___ idiomas en casa?",qa:"¿Quién habla más <b>∅</b> idiomas en casa?",ans:"∅",ansAlt:["—","sin artículo"],he:"Idiomas como plural indefinido → sin artículo",hr:"Языки в общем смысле → без артикля",ge:"Hablar idiomas / lenguas (plural genérico) = sin artículo. Hablar los idiomas (ya mencionados) = con artículo.",gr:"Языки в общем → без артикля.",isSubj:false,diff:2,tier:2,theme:"relaciones",curated:true},
+
+
+// ============================================================
+// SENTENCIAS TEMÁTICAS MIXTAS — aplicación en contexto
+// ============================================================
+
+// --- Relaciones Rufus / Маша ---
+{type:"artículo",typeRu:"artículo",q:"Rufus y Маша son ___ pareja desde hace dos años.",qa:"Rufus y Маша son <b>∅</b> pareja desde hace dos años.",ans:"∅",ansAlt:["—","sin artículo"],he:"Ser pareja / amigos / vecinos → sin artículo (relación como estado)",hr:"Быть парой/друзьями → без артикля",ge:"Son pareja / son amigos / son socios = estado relacional. Sin artículo.",gr:"Быть парой/друзьями → без артикля.",isSubj:false,diff:2,tier:1,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша y Rufus son ___ gran equipo.",qa:"Маша y Rufus son <b>un</b> gran equipo.",ans:"un",ansAlt:[],he:"Gran equipo: adjetivo antepuesto → artículo indefinido",hr:"С прилагательным gran → артикль un",ge:"Son un gran equipo = con adjetivo evaluativo. Sin adjetivo: 'son equipo' sería muy coloquial.",gr:"С прилагательным gran → un.",isSubj:false,diff:2,tier:1,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша llegó a Buenos Aires sin ___ conocer a nadie.",qa:"Маша llegó a Buenos Aires sin <b>∅</b> conocer a nadie.",ans:"∅",ansAlt:["—","sin artículo"],he:"Sin + infinitivo → sin artículo",hr:"Sin + инфинитив → без артикля",ge:"Sin + infinitivo = modo / condición negativa. Sin artículo.",gr:"Sin + инфинитив → без артикля.",isSubj:false,diff:1,tier:1,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus la quiere con ___ toda su alma.",qa:"Rufus la quiere con <b>∅</b> toda su alma.",ans:"∅",ansAlt:["—","sin artículo"],he:"Con toda su alma = expresión fija intensificadora → sin artículo propio",hr:"Всей душой → con toda su alma → без артикля перед con",ge:"Con toda su alma / con todo su corazón = expresión ponderativa. No hay artículo antes de 'con'.",gr:"Всей душой → con toda su alma → без отдельного артикля.",isSubj:false,diff:2,tier:2,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша tiene ___ fe en el proceso terapéutico.",qa:"Маша tiene <b>∅</b> fe en el proceso terapéutico.",ans:"∅",ansAlt:["—","sin artículo"],he:"Tener fe = expresión con incontable abstracto → sin artículo",hr:"Иметь веру → без артикля",ge:"Tener fe / esperanza / confianza (abstracto) = sin artículo.",gr:"Tener fe/esperanza → без артикля.",isSubj:false,diff:2,tier:1,theme:"psicología",curated:true},
+
+// --- Consultorio / trabajo clínico ---
+{type:"artículo",typeRu:"artículo",q:"El paciente llegó a la sesión con ___ mucha resistencia.",qa:"El paciente llegó a la sesión con <b>∅</b> mucha resistencia.",ans:"∅",ansAlt:["—","sin artículo"],he:"Con + incontable abstracto → sin artículo",hr:"С большим сопротивлением → без артикля",ge:"Con mucha resistencia / con poca energía / con bastante angustia = sin artículo.",gr:"Con + абстрактное → без артикля.",isSubj:false,diff:1,tier:1,theme:"psicología",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus tiene ___ formación en neuropsicología.",qa:"Rufus tiene <b>∅</b> formación en neuropsicología.",ans:"∅",ansAlt:["—","sin artículo"],he:"Formación en + campo → incontable abstracto → sin artículo",hr:"Подготовка в области → без артикля",ge:"Tener formación / experiencia / especialización en = sin artículo.",gr:"Подготовка/опыт в → без артикля.",isSubj:false,diff:1,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"La intervención fue con ___ respeto y ___ cuidado.",qa:"La intervención fue con <b>∅</b> respeto y <b>∅</b> cuidado.",ans:"∅",ansAlt:["—","sin artículo"],he:"Con + abstracto (respeto, cuidado) → sin artículo",hr:"С уважением и заботой → без артикля",ge:"Con respeto / con cuidado / con empatía = modo o actitud. Sin artículo.",gr:"С уважением/заботой → без артикля.",isSubj:false,diff:1,tier:1,theme:"psicología",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus trabaja sin ___ juzgar a sus pacientes.",qa:"Rufus trabaja sin <b>∅</b> juzgar a sus pacientes.",ans:"∅",ansAlt:["—","sin artículo"],he:"Sin + infinitivo → sin artículo",hr:"Без осуждения → sin juzgar → без артикля",ge:"Sin juzgar / sin apresurarse / sin interrumpir = sin artículo antes del infinitivo.",gr:"Sin + инфинитив → без артикля.",isSubj:false,diff:1,tier:1,theme:"psicología",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Es ___ clínica de adicciones muy reconocida.",qa:"Es <b>una</b> clínica de adicciones muy reconocida.",ans:"una",ansAlt:[],he:"Con 'muy reconocida' = adjetivo → artículo indefinido",hr:"С прилагательным → артикль una",ge:"'Clínica de adicciones' con adjetivo calificativo → una.",gr:"С прилагательным → una clínica.",isSubj:false,diff:2,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Fundación Gradiva es ___ comunidad terapéutica.",qa:"Fundación Gradiva es <b>una</b> comunidad terapéutica.",ans:"una",ansAlt:[],he:"Es una + categoría institucional (sin adjetivo evaluativo pero con marca categorial) → artículo",hr:"Организация + категория → una",ge:"Comunidad terapéutica = categoría institucional. 'Es una comunidad terapéutica' = instancia de esa categoría.",gr:"Категория учреждения → una.",isSubj:false,diff:2,tier:2,theme:"trabajo",curated:true},
+
+// --- Ciudad y cotidiano ---
+{type:"artículo",typeRu:"artículo",q:"Buenos Aires es ___ ciudad muy viva.",qa:"Buenos Aires es <b>una</b> ciudad muy viva.",ans:"una",ansAlt:[],he:"Ciudad + adjetivo → artículo indefinido",hr:"Город + прилагательное → una",ge:"Con adjetivo evaluativo: es una ciudad → artículo.",gr:"Город + прилагательное → una ciudad.",isSubj:false,diff:1,tier:1,theme:"ciudad",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Palermo es ___ barrio de Маша.",qa:"Palermo es <b>el</b> barrio de Маша.",ans:"el",ansAlt:[],he:"Barrio específico (conocido) → artículo definido",hr:"Конкретный район → определённый артикль",ge:"El barrio de Маша = ya identificado/conocido = artículo definido.",gr:"Конкретный район → el barrio.",isSubj:false,diff:1,tier:1,theme:"ciudad",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Hace ___ viento del sur hoy.",qa:"Hace <b>∅</b> viento del sur hoy.",ans:"∅",ansAlt:["—","sin artículo"],he:"Hacer viento / sol / frío → sin artículo",hr:"Дует ветер → hacer viento → без артикля",ge:"Hacer viento / sol / calor / frío = fenómeno meteorológico. Sin artículo.",gr:"Hacer viento → без артикля.",isSubj:false,diff:1,tier:1,theme:"ciudad",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша tomó ___ colectivo hasta Recoleta.",qa:"Маша tomó <b>el</b> colectivo hasta Recoleta.",ans:"el",ansAlt:[],he:"Colectivo específico (conocido) → artículo definido",hr:"Конкретный автобус → определённый артикль",ge:"El colectivo (conocido en contexto) vs. un colectivo (cualquiera). Aquí 'el' = el que corresponde.",gr:"Конкретный автобус → el colectivo.",isSubj:false,diff:1,tier:1,theme:"ciudad",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus fue al trabajo en ___ bici.",qa:"Rufus fue al trabajo en <b>∅</b> bici.",ans:"∅",ansAlt:["—","sin artículo"],he:"En bici / en auto / en colectivo → medio de transporte → sin artículo",hr:"На велосипеде → en bici → без артикля",ge:"En bici / en auto / en tren / en avión = medio de transporte → sin artículo.",gr:"На велосипеде/машине → en bici/auto → без артикля.",isSubj:false,diff:1,tier:1,theme:"ciudad",curated:true},
+
+// --- Cocina ---
+{type:"artículo",typeRu:"artículo",q:"Маша cocinó con ___ aceite de oliva.",qa:"Маша cocinó con <b>∅</b> aceite de oliva.",ans:"∅",ansAlt:["—","sin artículo"],he:"Con + sustancia / incontable → sin artículo",hr:"С оливковым маслом → без артикля",ge:"Cocinar con aceite / con sal / con ajo / con manteca = ingrediente → sin artículo.",gr:"Готовить с маслом/солью → без артикля.",isSubj:false,diff:1,tier:1,theme:"cocina",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus compró ___ vino para la cena.",qa:"Rufus compró <b>∅</b> vino para la cena.",ans:"∅",ansAlt:["—","sin artículo"],he:"Comprar + incontable genérico → sin artículo",hr:"Купить вина → без артикля",ge:"Comprar vino / pan / carne / fruta = genérico = sin artículo.",gr:"Купить вина/хлеба → без артикля.",isSubj:false,diff:1,tier:1,theme:"cocina",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Para la milanesa necesitás ___ huevo, ___ pan rallado y ___ carne.",qa:"Para la milanesa necesitás <b>∅</b> huevo, <b>∅</b> pan rallado y <b>∅</b> carne.",ans:"∅",ansAlt:["—","sin artículo"],he:"Ingredientes en receta → sin artículo (genérico / incontable)",hr:"Ингредиенты в рецепте → без артикля",ge:"En recetas: ingredientes en sentido genérico = sin artículo.",gr:"Ингредиенты в рецепте → без артикля.",isSubj:false,diff:1,tier:1,theme:"cocina",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"¿Hay ___ leche en la heladera?",qa:"¿Hay <b>∅</b> leche en la heladera?",ans:"∅",ansAlt:["—","sin artículo"],he:"Hay + incontable → sin artículo",hr:"Есть + неисчисляемое → без артикля",ge:"Hay + leche / agua / pan / azúcar = sin artículo en preguntas de disponibilidad.",gr:"Есть молоко? → ¿Hay leche? → без артикля.",isSubj:false,diff:1,tier:1,theme:"cocina",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus le preparó ___ mate a Маша.",qa:"Rufus le preparó <b>∅</b> mate a Маша.",ans:"∅",ansAlt:["—","sin artículo"],he:"Preparar mate → incontable/sustancia en función directa → sin artículo",hr:"Приготовить мате → без артикля",ge:"Tomar / preparar / cebar mate = sin artículo. Bebida ritual argentina.",gr:"Приготовить/пить мате → без артикля.",isSubj:false,diff:1,tier:1,theme:"cocina",curated:true},
+
+
+// ============================================================
+// EJERCICIOS DE REFLEXIÓN — ¿por qué?
+// ============================================================
+
+{type:"artículo",typeRu:"artículo",q:"¿Por qué se dice 'soy médico' y no 'soy un médico'?",qa:"Porque la profesión sola tras <b>ser</b> es un predicado categorial, no un sustantivo contable. Solo necesita artículo cuando lleva un modificador.",ans:"Porque la profesión es un predicado categorial",ansAlt:["Categoría profesional sin modificador"],he:"Regla de base: profesión = categoría, no instancia",hr:"Профессия = категория, не конкретный объект",ge:"Ser + profesión sin adjetivo = se predica categoría profesional. Con adjetivo pasa a ser instancia contable.",gr:"Профессия без прилагательного = категория → без артикля.",isSubj:false,diff:3,tier:2,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"¿Por qué 'la psicología es compleja' pero 'estudia psicología'?",qa:"Como <b>sujeto</b>, la disciplina lleva artículo (la psicología). Como <b>objeto directo</b> en función genérica (estudiar, enseñar), no lleva artículo.",ans:"Sujeto lleva artículo; objeto genérico no",ansAlt:["Depende de la función sintáctica"],he:"Función sintáctica determina el artículo",hr:"Синтаксическая функция определяет артикль",ge:"Como sujeto: la psicología. Como OD genérico: estudia psicología / practica yoga / habla ruso.",gr:"Подлежащее → артикль. Прямой объект в общем смысле → без артикля.",isSubj:false,diff:3,tier:3,theme:"psicología",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus ___ (ser) psicoanalista de formación pero trabaja con enfoque integrativo.",qa:"Rufus <b>es</b> psicoanalista de formación pero trabaja con enfoque integrativo.",ans:"es",ansAlt:[],he:"Ser + profesión/orientación → sin artículo",hr:"Профессиональная ориентация → без артикля",ge:"Es psicoanalista / cognitivista / sistémico = orientación teórica = categoría. Sin artículo.",gr:"Профессиональная ориентация после ser → без артикля.",isSubj:false,diff:2,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша ___ (ser) analista transaccional certificada.",qa:"Маша <b>es</b> analista transaccional certificada.",ans:"es",ansAlt:[],he:"Ser + profesión + adjetivo participial → sin artículo (certificada = parte del título)",hr:"Профессия + сертифицированная → без артикля",ge:"Aunque 'certificada' acompaña a la profesión, sigue siendo un título profesional compuesto. Sin artículo.",gr:"Профессиональный титул → без артикля.",isSubj:false,diff:2,tier:2,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"¿Sabés que ___ lunes no laboro?",qa:"¿Sabés que <b>los</b> lunes no laboro?",ans:"los",ansAlt:["el"],he:"Hábito recurrente → los + día",hr:"Регулярно → los + день",ge:"Los lunes = todos los lunes, hábito. El lunes = este lunes específico.",gr:"Регулярно → los lunes. В этот раз → el lunes.",isSubj:false,diff:2,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша dijo que hoy es ___ miércoles.",qa:"Маша dijo que hoy es <b>∅</b> miércoles.",ans:"∅",ansAlt:["—","sin artículo"],he:"Ser + día → sin artículo",hr:"Сегодня среда → sin artículo",ge:"Ser + nombre del día = identificación temporal. Sin artículo.",gr:"Сегодня среда → без артикля.",isSubj:false,diff:1,tier:1,theme:"all",curated:true},
+
+
+// ============================================================
+// REPASO GLOBAL — Frases largas con contexto
+// ============================================================
+
+{type:"artículo",typeRu:"artículo",q:"Rufus llegó sin ___ abrigo y con ___ sueño.",qa:"Rufus llegó sin <b>∅</b> abrigo y con <b>∅</b> sueño.",ans:"∅",ansAlt:["—","sin artículo"],he:"Sin + sustantivo + con + tener-sueño → ambos sin artículo",hr:"Sin + существительное и con + состояние → без артикля",ge:"Sin abrigo = privación. Con sueño = estado corporal. Ambos sin artículo.",gr:"Sin + существительное → без артикля. Con sueño → без артикля.",isSubj:false,diff:2,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша es ___ psicóloga rusa que vive en Palermo.",qa:"Маша es <b>una</b> psicóloga rusa que vive en Palermo.",ans:"una",ansAlt:[],he:"Profesión + adjetivo + cláusula relativa → artículo indefinido",hr:"Профессия + прилагательное + придаточное → una",ge:"La cláusula relativa (que vive en Palermo) individualiza → artículo.",gr:"Профессия с прилагательным и придаточным → una.",isSubj:false,diff:2,tier:1,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"___ amor y ___ confianza son la base de la relación.",qa:"<b>El</b> amor y <b>la</b> confianza son la base de la relación.",ans:"El",ansAlt:[],he:"Abstractos como sujeto → artículo definido",hr:"Абстрактное как подлежащее → определённый артикль",ge:"El amor / la confianza / la honestidad como sujeto = artículo definido.",gr:"Абстрактное как подлежащее → el/la.",isSubj:false,diff:2,tier:2,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Para Rufus, ___ terapia es ___ vocación.",qa:"Para Rufus, <b>la</b> terapia es <b>una</b> vocación.",ans:"la",ansAlt:[],he:"La terapia (genérica, sujeto) → artículo definido. Una vocación (predicado sin adjetivo explícito, pero con valor evaluativo implícito) → indefinido",hr:"Тема (подлежащее) → la. Призвание (предикат) → una",ge:"La terapia (sujeto general) = el; una vocación = instancia contable como predicado.",gr:"Подлежащее → la. Предикат (призвание) → una.",isSubj:false,diff:3,tier:2,theme:"psicología",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша habla ___ ruso, aprende ___ español y tiene ___ paciencia infinita.",qa:"Маша habla <b>∅</b> ruso, aprende <b>∅</b> español y tiene <b>∅</b> paciencia infinita.",ans:"∅",ansAlt:["—","sin artículo"],he:"Hablar + idioma → sin artículo; tener + abstracto → sin artículo",hr:"Говорить + язык → без артикля; иметь + абстрактное → без артикля",ge:"Hablar ruso / español = OD genérico. Tener paciencia = incontable abstracto. Todos sin artículo.",gr:"Язык как OD и абстрактное с tener → без артикля.",isSubj:false,diff:2,tier:1,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus trabaja como ___ supervisor clínico en la Fundación.",qa:"Rufus trabaja como <b>∅</b> supervisor clínico en la Fundación.",ans:"∅",ansAlt:["—","sin artículo"],he:"Trabajar como + rol/profesión → sin artículo",hr:"Работать как + должность → без артикля",ge:"Trabajar como médico / como terapeuta / como supervisor = rol funcional. Sin artículo.",gr:"Работать как + должность → без артикля.",isSubj:false,diff:2,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша habló con ___ mucha honestidad.",qa:"Маша habló con <b>∅</b> mucha honestidad.",ans:"∅",ansAlt:["—","sin artículo"],he:"Con + incontable abstracto + mucha → sin artículo",hr:"С большой честностью → без артикля",ge:"Con mucha honestidad / valentía / sensibilidad = modo. Sin artículo.",gr:"С большой честностью → без артикля.",isSubj:false,diff:1,tier:1,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Es ___ domingo perfecto para no hacer nada.",qa:"Es <b>un</b> domingo perfecto para no hacer nada.",ans:"un",ansAlt:[],he:"Es un + día + adjetivo → artículo indefinido (no identificación del día, sino descripción)",hr:"С прилагательным после дня недели → артикль un",ge:"'Hoy es domingo' = identificar el día → sin artículo. 'Es un domingo perfecto' = describir con adjetivo → artículo.",gr:"День недели + прилагательное → un domingo perfecto.",isSubj:false,diff:3,tier:2,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"¿Vas a ___ casa o al consultorio?",qa:"¿Vas a <b>∅</b> casa o al consultorio?",ans:"∅",ansAlt:["—","sin artículo"],he:"Ir a casa = propio hogar → sin artículo. Al consultorio = lugar específico → con artículo",hr:"Идти домой → sin artículo. В конкретное место → artículo",ge:"Ir a casa / a clase / a misa = destino habitual o propio = sin artículo. Al consultorio = definido.",gr:"Домой → без артикля. В конкретное место → con artículo.",isSubj:false,diff:2,tier:2,theme:"all",curated:true},
+
+
+// ============================================================
+// BATCH 7 — SEGUNDA PARTE (~85 frases adicionales)
+// Refuerzo de contraste ES↔EN, más cocina/ciudad, 
+// más expresiones con sin/con/de, y repaso integrado
+// ============================================================
+
+
+// ============================================================
+// EXPRESIONES CON SIN — ampliación
+// ============================================================
+
+{type:"artículo",typeRu:"artículo",q:"Rufus escucha sin ___ interrumpir.",qa:"Rufus escucha sin <b>∅</b> interrumpir.",ans:"∅",ansAlt:["—","sin artículo"],he:"Sin + infinitivo → sin artículo",hr:"Sin + инфинитив → без артикля",ge:"Sin + infinitivo = modo de acción negativo. Sin artículo.",gr:"Sin + инфинитив → без артикля.",isSubj:false,diff:1,tier:1,theme:"psicología",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша salió sin ___ paraguas y se mojó.",qa:"Маша salió sin <b>∅</b> paraguas y se mojó.",ans:"∅",ansAlt:["—","sin artículo"],he:"Sin + objeto → sin artículo (privación)",hr:"Без зонта → sin artículo",ge:"Sin paraguas / sin llaves / sin billetera = privación. Sin artículo.",gr:"Без зонта → sin paraguas → без артикля.",isSubj:false,diff:1,tier:1,theme:"ciudad",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"La reunión terminó sin ___ conclusión.",qa:"La reunión terminó sin <b>∅</b> conclusión.",ans:"∅",ansAlt:["—","sin artículo"],he:"Sin conclusión = sin resultado → sin artículo",hr:"Без вывода → без артикля",ge:"Sin conclusión / sin acuerdo / sin solución = ausencia → sin artículo.",gr:"Без вывода → без артикля.",isSubj:false,diff:1,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Vivir en Buenos Aires sin ___ auto es posible.",qa:"Vivir en Buenos Aires sin <b>∅</b> auto es posible.",ans:"∅",ansAlt:["—","sin artículo"],he:"Sin auto = sin ese recurso → privación → sin artículo",hr:"Без машины → без артикля",ge:"Sin auto / sin celular / sin internet = privación de recurso. Sin artículo.",gr:"Без машины → sin artículo.",isSubj:false,diff:1,tier:1,theme:"ciudad",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus habló con ___ franqueza sobre el diagnóstico.",qa:"Rufus habló con <b>∅</b> franqueza sobre el diagnóstico.",ans:"∅",ansAlt:["—","sin artículo"],he:"Con franqueza = con honestidad → modo adverbial → sin artículo",hr:"С откровенностью → без артикля",ge:"Con franqueza / directamente = modo. Sin artículo.",gr:"С откровенностью → con franqueza → без артикля.",isSubj:false,diff:1,tier:1,theme:"psicología",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша actuó con ___ gran valentía.",qa:"Маша actuó con <b>∅</b> gran valentía.",ans:"∅",ansAlt:["—","sin artículo"],he:"Con + gran + abstracto → sin artículo",hr:"С большой храбростью → без артикля",ge:"Con gran valentía / con mucho talento / con enorme paciencia = incontable abstracto. Sin artículo.",gr:"Con gran + абстрактное → без артикля.",isSubj:false,diff:1,tier:1,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Estaba sin ___ ganas de hablar.",qa:"Estaba sin <b>∅</b> ganas de hablar.",ans:"∅",ansAlt:["—","sin artículo"],he:"Sin ganas (de) = sin deseo → sin artículo",hr:"Без желания → sin ganas → без артикля",ge:"Sin ganas / sin energía / sin ánimo = estado de privación afectiva. Sin artículo.",gr:"Без желания → sin ganas → без артикля.",isSubj:false,diff:1,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Lo hizo de ___ memoria.",qa:"Lo hizo de <b>∅</b> memoria.",ans:"∅",ansAlt:["—","sin artículo"],he:"De memoria = locución adverbial fija → sin artículo",hr:"Наизусть → de memoria → без артикля",ge:"De memoria / de golpe / de casualidad / de verdad = locuciones adverbiales fijas. Sin artículo.",gr:"Наизусть → de memoria → без артикля.",isSubj:false,diff:2,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша entró en ___ pánico cuando vio el cucaracho.",qa:"Маша entró en <b>∅</b> pánico cuando vio el cucaracho.",ans:"∅",ansAlt:["—","sin artículo"],he:"Entrar en pánico / en crisis → sin artículo",hr:"Впасть в панику → без артикля",ge:"Entrar en pánico / en crisis / en calor / en razón = expresiones fijas. Sin artículo.",gr:"Впасть в панику → en pánico → без артикля.",isSubj:false,diff:2,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Por ___ suerte, Rufus llegó a tiempo.",qa:"Por <b>∅</b> suerte, Rufus llegó a tiempo.",ans:"∅",ansAlt:["—","sin artículo"],he:"Por suerte / por desgracia → locución adverbial → sin artículo",hr:"К счастью → por suerte → без артикля",ge:"Por suerte / por casualidad / por error / por supuesto = locuciones. Sin artículo.",gr:"К счастью → por suerte → без артикля.",isSubj:false,diff:1,tier:1,theme:"all",curated:true},
+
+
+// ============================================================
+// CIUDAD — ampliación
+// ============================================================
+
+{type:"artículo",typeRu:"artículo",q:"Маша llegó a Buenos Aires sin ___ conocer el idioma.",qa:"Маша llegó a Buenos Aires sin <b>∅</b> conocer el idioma.",ans:"∅",ansAlt:["—","sin artículo"],he:"Sin + infinitivo → sin artículo",hr:"Не зная языка → sin conocer → без артикля",ge:"Sin conocer / sin hablar / sin entender + infinitivo. Sin artículo.",gr:"Не зная → sin conocer → без артикля.",isSubj:false,diff:1,tier:1,theme:"ciudad",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"En Palermo hay ___ muchos restaurantes.",qa:"En Palermo hay <b>∅</b> muchos restaurantes.",ans:"∅",ansAlt:["—","sin artículo"],he:"Hay + plural sin determinante específico → sin artículo",hr:"Есть много ресторанов → без артикля",ge:"Hay + muchos/pocos + sustantivo plural = genérico. Sin artículo.",gr:"Есть много + мн.ч. → без артикля.",isSubj:false,diff:1,tier:1,theme:"ciudad",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus fue al supermercado a comprar ___ fruta.",qa:"Rufus fue al supermercado a comprar <b>∅</b> fruta.",ans:"∅",ansAlt:["—","sin artículo"],he:"Comprar fruta/verdura/carne → incontable o genérico → sin artículo",hr:"Купить фруктов → без артикля",ge:"Comprar fruta / verdura / pan / carne = genérico. Sin artículo.",gr:"Купить фруктов/овощей → без артикля.",isSubj:false,diff:1,tier:1,theme:"ciudad",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"El subte de Buenos Aires es ___ medio de transporte eficiente.",qa:"El subte de Buenos Aires es <b>un</b> medio de transporte eficiente.",ans:"un",ansAlt:[],he:"Categoría + adjetivo → artículo indefinido",hr:"Категория + прилагательное → un",ge:"Es un medio de transporte eficiente = instancia de categoría con adjetivo.",gr:"Категория + прилагательное → un.",isSubj:false,diff:2,tier:1,theme:"ciudad",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"___ Buenos Aires de noche es fascinante.",qa:"<b>El</b> Buenos Aires de noche es fascinante.",ans:"El",ansAlt:[],he:"Nombre de ciudad con modificador → artículo definido",hr:"Название города с определением → артикль el",ge:"El Buenos Aires de noche / el París de los '20 = ciudad con modificador temporal o adjetivo → artículo.",gr:"Город + определение → el/la.",isSubj:false,diff:3,tier:3,theme:"ciudad",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus vive a cinco cuadras de ___ trabajo.",qa:"Rufus vive a cinco cuadras de <b>∅</b> trabajo.",ans:"∅",ansAlt:["—","sin artículo"],he:"De + trabajo (destino habitual) → sin artículo",hr:"До работы → без артикля",ge:"Cerca de / lejos de + trabajo / casa / clase = destino habitual. Sin artículo.",gr:"Рядом с/далеко от работы → без артикля.",isSubj:false,diff:2,tier:2,theme:"ciudad",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Hoy es ___ viernes y las calles están llenas.",qa:"Hoy es <b>∅</b> viernes y las calles están llenas.",ans:"∅",ansAlt:["—","sin artículo"],he:"Ser + día → sin artículo",hr:"Сегодня пятница → без артикля",ge:"Ser + día de semana = sin artículo.",gr:"Сегодня пятница → sin artículo.",isSubj:false,diff:1,tier:1,theme:"ciudad",curated:true},
+
+
+// ============================================================
+// COCINA — ampliación
+// ============================================================
+
+{type:"artículo",typeRu:"artículo",q:"¿Le ponés ___ sal a la pasta?",qa:"¿Le ponés <b>∅</b> sal a la pasta?",ans:"∅",ansAlt:["—","sin artículo"],he:"Sal / azúcar / pimienta → incontables → sin artículo",hr:"Соль → неисчисляемое → без артикля",ge:"Agregar sal / azúcar / vinagre / pimienta = incontables. Sin artículo.",gr:"Соль/сахар/перец → без артикля.",isSubj:false,diff:1,tier:1,theme:"cocina",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus no come ___ carne.",qa:"Rufus no come <b>∅</b> carne.",ans:"∅",ansAlt:["—","sin artículo"],he:"No comer + alimento genérico → sin artículo",hr:"Не есть мяса → без артикля",ge:"No comer carne / no tomar alcohol / no beber café = hábito negativo con incontable. Sin artículo.",gr:"Не есть мяса → без артикля.",isSubj:false,diff:1,tier:1,theme:"cocina",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша aprendió a hacer ___ empanadas.",qa:"Маша aprendió a hacer <b>∅</b> empanadas.",ans:"∅",ansAlt:["—","sin artículo"],he:"Hacer + plural genérico → sin artículo",hr:"Делать эмпанадас (в общем) → без артикля",ge:"Hacer empanadas / hacer milanesas / hacer mate = genérico. Sin artículo.",gr:"Делать эмпанадас → без артикля.",isSubj:false,diff:1,tier:1,theme:"cocina",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"El asado se hace con ___ brasas, no con gas.",qa:"El asado se hace con <b>∅</b> brasas, no con gas.",ans:"∅",ansAlt:["—","sin artículo"],he:"Con brasas / con gas → incontables / materia → sin artículo",hr:"На углях/газе → без артикля",ge:"Con brasas / con gas / con leña / con carbón = material o combustible. Sin artículo.",gr:"На углях/газе → без артикля.",isSubj:false,diff:1,tier:1,theme:"cocina",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus abrió una botella de ___ vino tinto.",qa:"Rufus abrió una botella de <b>∅</b> vino tinto.",ans:"∅",ansAlt:["—","sin artículo"],he:"Botella de vino → contenido → sin artículo",hr:"Бутылка вина → без артикля",ge:"Una botella de / un kilo de / un litro de + sustancia = sin artículo.",gr:"Бутылка/кило/литр + содержимое → без артикля.",isSubj:false,diff:1,tier:1,theme:"cocina",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша prefiere ___ té a ___ café.",qa:"Маша prefiere <b>∅</b> té a <b>∅</b> café.",ans:"∅",ansAlt:["—","sin artículo"],he:"Preferir + bebida genérica → sin artículo",hr:"Предпочитать чай кофе → без артикля",ge:"Preferir / gustar / odiar + bebida o alimento genérico = sin artículo.",gr:"Предпочитать чай/кофе → без артикля.",isSubj:false,diff:1,tier:1,theme:"cocina",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Hay que tener ___ fuego fuerte para sellar la carne.",qa:"Hay que tener <b>∅</b> fuego fuerte para sellar la carne.",ans:"∅",ansAlt:["—","sin artículo"],he:"Fuego (incontable/masa) → sin artículo",hr:"Огонь (неисчисляемое) → без артикля",ge:"Fuego / calor / vapor en contexto culinario = incontable. Sin artículo.",gr:"Огонь/жар → без артикля.",isSubj:false,diff:1,tier:1,theme:"cocina",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus compró ___ medialunas para el desayuno.",qa:"Rufus compró <b>∅</b> medialunas para el desayuno.",ans:"∅",ansAlt:["—","sin artículo"],he:"Comprar + plural sin referencia específica → sin artículo",hr:"Купить круассанов → без артикля",ge:"Comprar medialunas / facturas / alfajores = plural indefinido genérico. Sin artículo.",gr:"Купить круассанов → без артикля.",isSubj:false,diff:1,tier:1,theme:"cocina",curated:true},
+
+
+// ============================================================
+// PROFESIONES / ROLES — ampliación
+// ============================================================
+
+{type:"artículo",typeRu:"artículo",q:"Su madre es ___ jubilada.",qa:"Su madre es <b>∅</b> jubilada.",ans:"∅",ansAlt:["—","sin artículo"],he:"Estado o condición laboral tras ser → sin artículo",hr:"На пенсии → jubilada → без артикля",ge:"Ser jubilado/a / desempleado/a / autónomo/a = condición laboral = sin artículo.",gr:"Статус занятости → без артикля.",isSubj:false,diff:1,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus también es ___ docente universitario.",qa:"Rufus también es <b>∅</b> docente universitario.",ans:"∅",ansAlt:["—","sin artículo"],he:"Profesión compuesta sin adjetivo evaluativo → sin artículo",hr:"Профессия → без артикля",ge:"Docente universitario / investigador clínico / supervisor de residencia = título profesional. Sin artículo.",gr:"Профессия без оценочного прилагательного → без артикля.",isSubj:false,diff:1,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша quiere ser ___ supervisora de grupos.",qa:"Маша quiere ser <b>∅</b> supervisora de grupos.",ans:"∅",ansAlt:["—","sin artículo"],he:"Querer ser + rol profesional → sin artículo",hr:"Хотеть стать + должность → без артикля",ge:"Querer ser supervisora / docente / coordinadora = aspiración profesional. Sin artículo.",gr:"Хотеть стать + должность → без артикля.",isSubj:false,diff:1,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Ese hombre es ___ ingeniero de software.",qa:"Ese hombre es <b>∅</b> ingeniero de software.",ans:"∅",ansAlt:["—","sin artículo"],he:"Profesión + especialidad → sin artículo",hr:"Инженер-программист → без артикля",ge:"Ingeniero de software / médico de guardia / psicólogo de planta = rol específico sin adjetivo evaluativo. Sin artículo.",gr:"Профессия + специальность → без артикля.",isSubj:false,diff:1,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus es ___ profesional muy demandado en el sector.",qa:"Rufus es <b>un</b> profesional muy demandado en el sector.",ans:"un",ansAlt:[],he:"Profesional + adjetivo superlativo → artículo",hr:"Профессионал + прилагательное → артикль",ge:"Profesional muy demandado = evaluación. Adjetivo → artículo indefinido.",gr:"Профессионал + прилагательное → un.",isSubj:false,diff:2,tier:1,theme:"trabajo",curated:true},
+
+
+// ============================================================
+// RELACIONES — ampliación
+// ============================================================
+
+{type:"artículo",typeRu:"artículo",q:"Rufus y Маша son ___ vecinos de hecho.",qa:"Rufus y Маша son <b>∅</b> vecinos de hecho.",ans:"∅",ansAlt:["—","sin artículo"],he:"Ser vecinos = relación → sin artículo",hr:"Быть соседями → без артикля",ge:"Son vecinos / amigos / socios = relación funcional. Sin artículo.",gr:"Быть соседями → без артикля.",isSubj:false,diff:1,tier:1,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Enrique es ___ amigo de Rufus de toda la vida.",qa:"Enrique es <b>∅</b> amigo de Rufus de toda la vida.",ans:"∅",ansAlt:["—","sin artículo"],he:"Ser amigo de = relación → sin artículo",hr:"Быть другом → без артикля",ge:"Ser amigo de / familiar de / colega de = vínculo relacional. Sin artículo.",gr:"Быть другом → без артикля.",isSubj:false,diff:1,tier:1,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша y Rufus se comunican con ___ mucho humor.",qa:"Маша y Rufus se comunican con <b>∅</b> mucho humor.",ans:"∅",ansAlt:["—","sin artículo"],he:"Con mucho humor = modo → sin artículo",hr:"С большим юмором → без артикля",ge:"Con mucho humor / con ironía / con cariño = modo comunicativo. Sin artículo.",gr:"С большим юмором → без артикля.",isSubj:false,diff:1,tier:1,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша tiene ___ familia en Rusia.",qa:"Маша tiene <b>∅</b> familia en Rusia.",ans:"∅",ansAlt:["—","sin artículo"],he:"Tener familia → incontable abstracto → sin artículo",hr:"Иметь семью → без артикля",ge:"Tener familia / amigos / trabajo = categoría general. Sin artículo.",gr:"Иметь семью (в общем) → без артикля.",isSubj:false,diff:1,tier:1,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"___ familia de Маша vive en Moscú.",qa:"<b>La</b> familia de Маша vive en Moscú.",ans:"La",ansAlt:[],he:"La familia de Маша = específica, conocida → artículo definido",hr:"Конкретная семья Маши → определённый артикль",ge:"La familia de Маша (ya identificada) = artículo. Tener familia (genérico) = sin artículo.",gr:"Конкретная семья → la familia.",isSubj:false,diff:2,tier:1,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Hay que hablar las cosas con ___ calma.",qa:"Hay que hablar las cosas con <b>∅</b> calma.",ans:"∅",ansAlt:["—","sin artículo"],he:"Con calma = modo → sin artículo",hr:"Спокойно → con calma → без артикля",ge:"Con calma / tranquilo / paciencia = actitud. Sin artículo.",gr:"Спокойно → con calma → без артикля.",isSubj:false,diff:1,tier:1,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus tiene ___ respeto por sus pacientes.",qa:"Rufus tiene <b>∅</b> respeto por sus pacientes.",ans:"∅",ansAlt:["—","sin artículo"],he:"Tener respeto = abstracto → sin artículo",hr:"Уважать → tener respeto → без артикля",ge:"Tener respeto / consideración / aprecio por = incontable abstracto. Sin artículo.",gr:"Уважать → tener respeto → без артикля.",isSubj:false,diff:1,tier:1,theme:"psicología",curated:true},
+
+
+// ============================================================
+// CONTRASTE AVANZADO — inglés vs. español
+// ============================================================
+
+{type:"artículo",typeRu:"artículo",q:"___ felicidad no se compra con dinero.",qa:"<b>La</b> felicidad no se compra con dinero.",ans:"La",ansAlt:[],he:"Abstracto como sujeto de enunciado general → artículo definido",hr:"Абстрактное как подлежащее → la",ge:"La felicidad / la libertad / el éxito = abstractos en posición de sujeto = artículo. Inglés: 'Happiness cannot be bought' sin artículo.",gr:"Абстрактное как подлежащее → la (в отличие от английского).",isSubj:false,diff:2,tier:2,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"___ trabajo es importante, pero no lo es todo.",qa:"<b>El</b> trabajo es importante, pero no lo es todo.",ans:"El",ansAlt:[],he:"Trabajo como concepto general en posición de sujeto → artículo definido",hr:"Работа как понятие (подлежащее) → el",ge:"El trabajo / el dinero / el éxito como sujeto filosófico = artículo definido. Inglés: 'Work is important' sin artículo.",gr:"Работа как понятие → el trabajo.",isSubj:false,diff:2,tier:2,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"___ agua del río Santa Cruz está contaminada.",qa:"<b>El</b> agua del río Santa Cruz está contaminada.",ans:"El",ansAlt:[],he:"Agua es femenino pero toma 'el' en singular por fonética (empieza con a tónica)",hr:"Agua — женский род, но el agua (фонетическое правило)",ge:"El agua (femenino con artículo masculino en singular por fonética: a- tónica). Las aguas en plural.",gr:"El agua — женский род, но фонетическое правило → el.",isSubj:false,diff:3,tier:2,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus se siente ___ psicólogo en todo momento.",qa:"Rufus se siente <b>∅</b> psicólogo en todo momento.",ans:"∅",ansAlt:["—","sin artículo"],he:"Sentirse + profesión/rol → sin artículo (igual que ser)",hr:"Чувствовать себя врачом → без артикля",ge:"Sentirse / considerarse / llamarse + profesión o rol = sin artículo.",gr:"Чувствовать себя + профессия → без артикля.",isSubj:false,diff:2,tier:2,theme:"psicología",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша se considera ___ aprendiz del español.",qa:"Маша se considera <b>∅</b> aprendiz del español.",ans:"∅",ansAlt:["—","sin artículo"],he:"Considerarse + rol → sin artículo",hr:"Считать себя → без артикля",ge:"Considerarse / verse como / llamarse + rol = sin artículo.",gr:"Считать себя + роль → без артикля.",isSubj:false,diff:2,tier:2,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus y Маша son ___ pareja muy bien avenida.",qa:"Rufus y Маша son <b>una</b> pareja muy bien avenida.",ans:"una",ansAlt:[],he:"Pareja + adjetivo → artículo indefinido",hr:"Пара + прилагательное → una",ge:"Son una pareja muy bien avenida = con adjetivo evaluativo → artículo.",gr:"Пара + прилагательное → una pareja.",isSubj:false,diff:2,tier:1,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"En ___ psicoanálisis se trabaja con el inconsciente.",qa:"En <b>el</b> psicoanálisis se trabaja con el inconsciente.",ans:"el",ansAlt:[],he:"Nombre de corriente/disciplina → artículo definido",hr:"Название направления → определённый артикль",ge:"En el psicoanálisis / en el cognitivismo / en el AT = corriente teórica. Artículo definido.",gr:"Название теоретического направления → el.",isSubj:false,diff:2,tier:2,theme:"psicología",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Estar sin ___ celular un día entero es difícil.",qa:"Estar sin <b>∅</b> celular un día entero es difícil.",ans:"∅",ansAlt:["—","sin artículo"],he:"Sin celular = sin ese objeto → privación → sin artículo",hr:"Без телефона → без артикля",ge:"Sin celular / sin computadora / sin wifi = privación tecnológica. Sin artículo.",gr:"Без телефона → без артикля.",isSubj:false,diff:1,tier:1,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Hablaron de ___ trabajo hasta las doce.",qa:"Hablaron de <b>∅</b> trabajo hasta las doce.",ans:"∅",ansAlt:["—","sin artículo"],he:"Hablar de + tema genérico → sin artículo",hr:"Говорить о работе (в общем) → без артикля",ge:"Hablar de trabajo / de psicología / de política = ámbito temático genérico. Sin artículo.",gr:"Говорить о работе (в общем) → без артикля.",isSubj:false,diff:1,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus trabaja con ___ adolescentes en el hospital.",qa:"Rufus trabaja con <b>∅</b> adolescentes en el hospital.",ans:"∅",ansAlt:["—","sin artículo"],he:"Con + categoría de personas en plural → sin artículo",hr:"С подростками → без артикля",ge:"Con adolescentes / con adultos mayores / con adictos = categoría de pacientes. Sin artículo.",gr:"С категорией людей → без артикля.",isSubj:false,diff:1,tier:1,theme:"trabajo",curated:true},
+
+
+// ============================================================
+// MINI REPASO FINAL — frases integradas
+// ============================================================
+
+{type:"artículo",typeRu:"artículo",q:"Rufus es ___ médico sin ___ tiempo libre.",qa:"Rufus es <b>∅</b> médico sin <b>∅</b> tiempo libre.",ans:"∅",ansAlt:["—","sin artículo"],he:"Profesión sola → sin artículo. Sin tiempo libre → privación → sin artículo.",hr:"Профессия → без артикля. Без свободного времени → без артикля.",ge:"Dos reglas en una oración: profesión + privación. Ambas sin artículo.",gr:"Профессия → без артикля. Sin + существительное → без артикля.",isSubj:false,diff:2,tier:2,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша es ___ rusa con ___ acento encantador.",qa:"Маша es <b>∅</b> rusa con <b>un</b> acento encantador.",ans:"∅",ansAlt:["—","sin artículo"],he:"Nacionalidad → sin artículo. Con un acento + adjetivo → artículo indefinido.",hr:"Национальность → без артикля. С акцентом + прилагательное → артикль.",ge:"Rusa = nacionalidad sin adjetivo. Un acento encantador = sustantivo contable con adjetivo.",gr:"Национальность → без артикля. Существительное + прилагательное → un.",isSubj:false,diff:3,tier:2,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Hoy es ___ jueves y Rufus tiene ___ muchos pacientes.",qa:"Hoy es <b>∅</b> jueves y Rufus tiene <b>∅</b> muchos pacientes.",ans:"∅",ansAlt:["—","sin artículo"],he:"Día con ser → sin artículo. Muchos pacientes (genérico) → sin artículo.",hr:"День с ser → без артикля. Много пациентов → без артикля.",ge:"Es jueves = identificación del día. Tener muchos pacientes = plural genérico. Ambos sin artículo.",gr:"День → без артикля. Много пациентов → без артикля.",isSubj:false,diff:2,tier:1,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"___ lunes Маша va a ___ clase de AT.",qa:"<b>Los</b> lunes Маша va a <b>∅</b> clase de AT.",ans:"Los",ansAlt:[],he:"Los lunes (hábito) → artículo. A clase → actividad institucional → sin artículo.",hr:"По понедельникам (привычка) → los. На занятие → без артикля.",ge:"Los lunes = hábito semanal → artículo. A clase = actividad institucional habitual → sin artículo.",gr:"Привычка → los lunes. На занятие → без артикля.",isSubj:false,diff:3,tier:2,theme:"all",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Маша habla ___ ruso con ___ paciencia cuando Rufus no entiende.",qa:"Маша habla <b>∅</b> ruso con <b>∅</b> paciencia cuando Rufus no entiende.",ans:"∅",ansAlt:["—","sin artículo"],he:"Hablar ruso → idioma como OD → sin artículo. Con paciencia → modo → sin artículo.",hr:"Говорить + язык → без артикля. С терпением → без артикля.",ge:"Dos sin artículo: idioma como OD + modo con abstracto.",gr:"Язык как OD → без артикля. С терпением → без артикля.",isSubj:false,diff:2,tier:1,theme:"relaciones",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus escribe informes con ___ claridad y sin ___ errores.",qa:"Rufus escribe informes con <b>∅</b> claridad y sin <b>∅</b> errores.",ans:"∅",ansAlt:["—","sin artículo"],he:"Con claridad → modo → sin artículo. Sin errores → privación plural → sin artículo.",hr:"С ясностью → без артикля. Без ошибок → без артикля.",ge:"Con claridad = modo abstracto. Sin errores = ausencia en plural. Ambos sin artículo.",gr:"С ясностью → без артикля. Без ошибок → без артикля.",isSubj:false,diff:2,tier:2,theme:"trabajo",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"___ análisis transaccional es ___ herramienta muy poderosa.",qa:"<b>El</b> análisis transaccional es <b>una</b> herramienta muy poderosa.",ans:"El",ansAlt:[],he:"Disciplina como sujeto → el. Herramienta + adjetivo → una.",hr:"Дисциплина как подлежащее → el. Инструмент + прилагательное → una.",ge:"El AT (sujeto) = artículo definido. Una herramienta poderosa (predicado con adjetivo) = artículo indefinido.",gr:"Дисциплина → el. Инструмент с прилагательным → una.",isSubj:false,diff:3,tier:2,theme:"psicología",curated:true},
+
+{type:"artículo",typeRu:"artículo",q:"Rufus llegó sin ___ abrigo, con ___ hambre y sin ___ llave.",qa:"Rufus llegó sin <b>∅</b> abrigo, con <b>∅</b> hambre y sin <b>∅</b> llave.",ans:"∅",ansAlt:["—","sin artículo"],he:"Tres casos: sin + objeto, tener hambre, sin + objeto → todos sin artículo",hr:"Три случая без артикля: sin + объект, голод, sin + объект",ge:"Sin abrigo (privación), hambre (tener), sin llave (privación) = todos sin artículo.",gr:"Три случая → все без артикля.",isSubj:false,diff:3,tier:2,theme:"all",curated:true},
